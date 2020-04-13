@@ -1,11 +1,13 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() => runApp(NewApp());
 
 class NewApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    debugPaintSizeEnabled = true;
     return MaterialApp(
       title: 'Startup Name Generator',
       theme: new ThemeData(
