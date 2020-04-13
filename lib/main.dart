@@ -8,9 +8,17 @@ class NewApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
+      theme: new ThemeData(
+        primaryColor: Colors.white,
+      ),
       home: RandomWords(),
     );
   }
+}
+
+class RandomWords extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => RandomWordsState();
 }
 
 class RandomWordsState extends State<RandomWords> {
@@ -95,11 +103,6 @@ class RandomWordsState extends State<RandomWords> {
       );
     }));
   }
-}
-
-class RandomWords extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => RandomWordsState();
 }
 
 ////////////////////////////////////////////////////////////////////////////////
